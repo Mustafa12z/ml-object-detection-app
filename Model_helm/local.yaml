@@ -14,7 +14,3 @@ service:
 
 ingress:
   enabled: false
-  tls:
-    enabled: false
-    host: ai.labs.mustafamirreh.com
-    secretName: ai-app-tls
