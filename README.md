@@ -46,6 +46,3 @@ Follow these steps to run the app on your machine:
 5. **Access the App**  
    Open your browser and go to [http://localhost:3000](http://localhost:3000).
 
----
-
-Let me know if you need more instructions or support.
