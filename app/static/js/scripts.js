@@ -58,3 +58,8 @@ async function fetchResults() {
     }
 }
 
+// New Function to Handle "Use Your Camera" Button
+function openCameraWindow() {
+    // Open a new window with the camera interface
+    window.open('/camera', 'Camera Window', 'width=800,height=600');
+}

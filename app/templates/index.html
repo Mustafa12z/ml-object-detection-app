@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mustafa's AI Model</title>
-  <link rel="stylesheet" href="./static/css/styles.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
   <!-- Navbar -->
@@ -14,9 +14,16 @@
 
   <!-- Main Section -->
   <div class="main-section">
-    <div class="test-box">
+    <!-- Existing Image Processing Card -->
+    <div class="card">
       <h2>Test out the AI Model</h2>
-      <button class="test-button" onclick="fetchResults()">Test Me Out</button>
+      <button class="card-button" onclick="fetchResults()">Test Me Out</button>
+    </div>
+
+    <!-- New Camera Functionality Card -->
+    <div class="card">
+      <h2>Use Your Camera</h2>
+      <button class="card-button" onclick="openCameraWindow()">Use Your Camera</button>
     </div>
   </div>
 
@@ -24,6 +31,8 @@
   <div id="results" class="results">
     <!-- JSON results will be rendered here -->
   </div>
-  <script src="./static/js/scripts.js"></script>
+
+  <!-- Scripts -->
+  <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
 </body>
 </html>
